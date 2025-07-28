@@ -1,0 +1,28 @@
+{
+  "name": "langgraph-chat-bot",
+  "version": "1.0.0",
+  "description": "A chatbot using LangChain with message persistence",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "npm run dev",
+    "chat": "ts-node src/examples/interactiveChat.ts",
+    "example": "ts-node src/examples/basicExample.ts",
+    "langgraph": "ts-node src/examples/langGraphExample.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.66",
+    "@langchain/langgraph": "^0.4.0",
+    "@langchain/openai": "^0.6.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^17.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
